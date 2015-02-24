@@ -1,12 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Dosis:400,600,800);
+
 /** Styles **/
 	
 	html {
 		background-color:#c9c9c9;
-		overflow: hidden;
 	}
 	body {
 		background-color: #fff;
 		float: left;
+		font-family: 'Dosis', sans-serif;
+		font-weight: 400;
+		overflow: scroll;
 		width: 305px;
 	}
 
@@ -15,8 +19,29 @@
 		width:305px;
 	}
 
+
+	/***** Menu page *****/	
+		img.gameIcon {
+			float: left;
+		}
+		.statusBar ul li {
+			list-style: none;
+		}
+		.statusBar ul li a {
+			background-color: #fff;
+			border-radius: 8px;
+			color: #000;
+			display: block;
+			margin: 0 0 5px 0;
+			padding: 4px 5px;
+			text-align: center;
+			text-decoration: none;
+		}
+
+
 	/***** Status Bar *****/
-		.statusBar p {
+		.statusBar p,
+		.statusBar ul {
 			background: #000;
 			border-top: 6px double #fff;
 			border-bottom: 6px double #fff;
@@ -64,6 +89,8 @@
 			#colors li.green { background-color: green; }
 			#colors li.blue { background-color: blue; }
 			#colors li.yellow { background-color: yellow; }
+			#colors li.orange { background-color: orange; }
+			#colors li.purple { background-color: purple; }
 			#colors li.on { background-color: black; }
 			p#start { cursor: pointer; /*color: blue;*/ }
 			p#start:hover { text-decoration: underline; }
