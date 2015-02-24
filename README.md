@@ -14,6 +14,7 @@ Watch what random sequence of color highlights Simon comes up with - complete th
 - Store best game level reached for each difficulty level
 
 ### CodePen Demo
- 
+
+Bare bones code Example (will update as game evolves through development)
 http://plnkr.co/edit/4yaGKaA38bE9lmV0W6UR?p=preview 
 
