@@ -16,16 +16,27 @@
 </head>
 
 	<body class="game-over">
-		<p id="start">Start the game</p>
-		
-		<p id="level">Level 1</p>
-		
-		<ul id="colors">
-			<li></li>
-			<li class="green"></li>
-			<li class="blue"></li>
-			<li class="yellow"></li>
-		</ul>
+
+		<div id="gameContainer">
+
+			<div class="statusBar">
+				<p id="start">Start the game</p>			
+			</div>
+
+			<div id="gameArea">
+				<ul id="colors">
+					<li></li>
+					<li class="green"></li>
+					<li class="blue"></li>
+					<li class="yellow"></li>
+				</ul>
+			</div>
+
+			<div class="statusBar">
+				<p id="level">Level 1</p>
+			</div>
+
+		</div>
 		
 		<script src="scripts/jquery.min.js"></script>	
 		<script src="scripts/theGameRules.js"></script>

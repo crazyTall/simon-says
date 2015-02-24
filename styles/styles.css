@@ -1,35 +1,77 @@
 /** Styles **/
-
-	#colors {
-		float: left;
+	
+	html {
+		background-color:#c9c9c9;
 		overflow: hidden;
-		width: 280px;
 	}
-	#colors li {
-		background-color: red;
-		color: black;
-		cursor: auto;
-		font-size: 30px;
-		line-height: 100px;
-		list-style-position: inside;
-		list-style-type: none;
-		height: 100px;
+	body {
+		background-color: #fff;
 		float: left;
-		width: 100px;
-		margin-right: 20px;
-		margin-bottom: 20px;
+		width: 305px;
 	}
-	#colors li.green { background-color: green; }
-	#colors li.blue { background-color: blue; }
-	#colors li.yellow { background-color: yellow; }
-	#colors li.on { background-color: black; }
-	p#start { cursor: pointer; color: blue; }
-	p#start:hover { text-decoration: underline; }
-	.playing #colors li {
-		cursor: pointer;
+
+	#gameContainer {
+		margin:0 auto;
+		width:305px;
 	}
-	.game-over #colors li {
-		opacity: 0.5;
-	}
+
+	/***** Status Bar *****/
+		.statusBar p {
+			background: #000;
+			border-top: 6px double #fff;
+			border-bottom: 6px double #fff;
+			color: #fff;
+			float: left;
+			padding: 3% 6%;
+			width: 268px;
+		}	
+
+	/***** Game Area *****/
+
+		/*** Background ***/
+			#gameArea {
+				background: url('../images/background-1.png') no-repeat 0 0;
+				background-size: 100%;
+				float: left;
+				height: 100%;
+				margin-bottom: 10px;
+				opacity: 0.5;
+				width: 305px;
+			}
+
+		/*** Main controls ***/
+			#colors {
+				float: left;
+				margin: 6% 16%;
+				overflow: hidden;
+				padding: 0;
+				width: 68%;
+			}
+			#colors li {
+				background-color: red;
+				color: black;
+				cursor: auto;
+				float: left;
+				font-size: 30px;
+				height: 80px;
+				line-height: 100px;
+				list-style-position: inside;
+				list-style-type: none;
+				margin: 10px;
+				opacity: 1;
+				width: 80px;
+			}
+			#colors li.green { background-color: green; }
+			#colors li.blue { background-color: blue; }
+			#colors li.yellow { background-color: yellow; }
+			#colors li.on { background-color: black; }
+			p#start { cursor: pointer; /*color: blue;*/ }
+			p#start:hover { text-decoration: underline; }
+			.playing #colors li {
+				cursor: pointer;
+			}
+			.game-over #colors li {
+				opacity: 0.5;
+			}
 
 		
